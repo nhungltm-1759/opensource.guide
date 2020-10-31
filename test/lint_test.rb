@@ -7,7 +7,6 @@ describe "lint test" do
     describe page["path"] do
       describe "frontmatter" do
         before do
-          # Load raw metadata to skip defaults
           @data = SafeYAML.load_file(page["path"])
         end
 
